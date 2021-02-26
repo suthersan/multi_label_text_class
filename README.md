@@ -13,7 +13,7 @@ Project Organization
     │
     ├── notebooks          <- Jupyter notebooks. "Multi classification-data.ipynb" is our main script file. 
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment. The script also includes "-e ." at the end to automatically implement "pip install -e .", Script is generated with `pip freeze > requirements.txt`. If      │			       this does not work, please execute "pip install -e ." manually from the project root directory.
+    ├── environment.yml   <- The configuration file for reproducing the analysis environment. Do check the "Posterior configuration" below, once the environment is created.
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
@@ -24,6 +24,18 @@ Project Organization
     	      └── read_data.py
 
 
+Posterior configuration
+-----------------------
+
+Please execute these in your enviornment once it has been created with the yml file:
+
+python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_md
+
+
+Please do ensure your are in the project's root directory before executing the below command:
+
+pip install -e .
 
 --------
 
